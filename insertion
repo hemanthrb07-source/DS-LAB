@@ -42,4 +42,17 @@ class LinkedList:
         temp = self.head
         while temp:
             print(temp.data)
-            temp = temp.next
+            temp = temp.next  
+        if __name__ == "__main__":
+           llist = LinkedList()
+
+           llist.append(6)
+           llist.push(7)
+           llist.push(1)
+           llist.append(4)
+
+   
+         llist.insertAfter(llist.head.next, 8)
+
+          print("Created linked list is:")
+          llist.printList()
